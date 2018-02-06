@@ -1,0 +1,33 @@
+{
+    "name": "bantenprov/rujukan-pasien-masyarakat-miskin",
+    "description": "Cakupan Pelayanan Kesehatan Rujukan Pasien Masyarakat Miskin Menurut Kabupaten/Kota",
+    "type": "library",
+    "homepage": "https://github.com/bantenprov/rujukan-pasien-masyarakat-miskin",
+    "authors": [
+        {
+        "name": "bantenprov",
+        "email": "developer.bantenprov@gmail.com",
+        "role": "developer"
+    }
+    ],
+    "license": "MIT",
+    "support": {
+      "source": "https://github.com/bantenprov/rujukan-pasien-masyarakat-miskin,",
+      "issues": "https://github.com/bantenprov/rujukan-pasien-masyarakat-miskin/issues",
+      "wiki": "https://github.com/bantenprov/rujukan-pasien-masyarakat-miskin/wiki"
+    },
+    "require": {
+        "php": ">=5.6.4",
+        "laravel/framework": "5.4.*",
+        "laravel/tinker": "~1.0"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers/helpers.php"
+        ],
+        "psr-4": {
+            "Bantenprov\\RujukanPasienMiskin\\": "src"
+        }
+    },
+    "minimum-stability": "dev"
+}
