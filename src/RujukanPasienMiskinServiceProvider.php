@@ -33,6 +33,7 @@ class RujukanPasienMiskinServiceProvider extends ServiceProvider
         $this->viewHandle();
         $this->assetHandle();
         $this->migrationHandle();
+        $this->publicHandle();
     }
 
     /**
@@ -136,7 +137,7 @@ class RujukanPasienMiskinServiceProvider extends ServiceProvider
 
         $this->publishes([
             $packageAssetsPath => resource_path('assets'),
-        ], 'ahh-assets');
+        ], 'rujukan-pasien-miskin-assets');
     }
 
     /**
@@ -153,5 +154,14 @@ class RujukanPasienMiskinServiceProvider extends ServiceProvider
         $this->publishes([
             $packageMigrationsPath => database_path('migrations')
         ], 'migrations');
+    }
+
+    public function publicHandle()
+    {
+        $packagePublicPath = __DIR__.'/public';
+
+        $this->publishes([
+            $packagePublicPath => base_path('public')
+        ], 'rujukan-pasien-miskin-public');
     }
 }
