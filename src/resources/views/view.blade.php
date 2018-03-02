@@ -1,0 +1,1 @@
+This is demo view file for Bantenprov\RujukanPasienMiskin package using blade template
